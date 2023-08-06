@@ -323,6 +323,19 @@ QPushButton{
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>210</y>
+         <width>171</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Queremos Ver</string>
+       </property>
+      </widget>
      </widget>
     </item>
    </layout>
