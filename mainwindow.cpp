@@ -31,3 +31,10 @@ void MainWindow::on_btn3_clicked()
     ui->staPaginas->setCurrentIndex(2);
 }
 
+
+void MainWindow::on_alertasBtn_clicked()
+{
+    dgAgregarHoja * dialog = new dgAgregarHoja(this);
+    dialog->show();
+}
+

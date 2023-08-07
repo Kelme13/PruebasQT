@@ -169,6 +169,11 @@ QPushButton{
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+	padding: 15px;
+}</string>
+            </property>
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
             </property>
@@ -183,13 +188,13 @@ QPushButton{
               <number>0</number>
              </property>
              <property name="topMargin">
-              <number>10</number>
+              <number>0</number>
              </property>
              <property name="rightMargin">
               <number>0</number>
              </property>
              <property name="bottomMargin">
-              <number>10</number>
+              <number>0</number>
              </property>
              <item alignment="Qt::AlignHCenter">
               <widget class="QPushButton" name="btn2">
@@ -275,7 +280,7 @@ QPushButton{
             </property>
            </spacer>
           </item>
-          <item alignment="Qt::AlignBottom">
+          <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
            <widget class="QFrame" name="frame_3">
             <property name="frameShape">
              <enum>QFrame::StyledPanel</enum>
@@ -299,7 +304,7 @@ QPushButton{
              <property name="bottomMargin">
               <number>10</number>
              </property>
-             <item>
+             <item alignment="Qt::AlignHCenter">
               <widget class="QPushButton" name="alertasBtn">
                <property name="toolTip">
                 <string>Alertas</string>

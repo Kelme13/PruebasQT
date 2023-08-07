@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "dgagregarhoja.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,6 +22,8 @@ private slots:
     void on_btn1_clicked();
 
     void on_btn3_clicked();
+
+    void on_alertasBtn_clicked();
 
 private:
     Ui::MainWindow *ui;
