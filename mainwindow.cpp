@@ -13,3 +13,21 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_btn2_clicked()
+{
+    ui->staPaginas->setCurrentIndex(0);
+}
+
+
+void MainWindow::on_btn1_clicked()
+{
+    ui->staPaginas->setCurrentIndex(1);
+}
+
+
+void MainWindow::on_btn3_clicked()
+{
+    ui->staPaginas->setCurrentIndex(2);
+}
+

@@ -288,4 +288,7 @@
         <file>img/zoom-in.svg</file>
         <file>img/zoom-out.svg</file>
     </qresource>
+    <qresource prefix="/logo">
+        <file>img/logo-tree.png</file>
+    </qresource>
 </RCC>
