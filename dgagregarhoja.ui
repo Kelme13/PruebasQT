@@ -158,7 +158,7 @@ QComboBox{
        </size>
       </property>
      </widget>
-     <widget class="QTextEdit" name="textEdit">
+     <widget class="QTextEdit" name="ValorTexto">
       <property name="geometry">
        <rect>
         <x>160</x>
@@ -214,7 +214,7 @@ QComboBox{
        <string>Padre</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="ComboPadre">
       <property name="geometry">
        <rect>
         <x>170</x>

@@ -1,5 +1,6 @@
 #include "dgagregarhoja.h"
 #include "ui_dgagregarhoja.h"
+#include "errorpopup.h"
 
 dgAgregarHoja::dgAgregarHoja(QWidget *parent) :
     QDialog(parent),
@@ -7,7 +8,9 @@ dgAgregarHoja::dgAgregarHoja(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->comboBox->addItem("nada aun");
+    ui->cbPosicion->addItem("Derecha");
+    ui->cbPosicion->addItem("Izquierda");
+
 }
 
 dgAgregarHoja::~dgAgregarHoja()
@@ -23,6 +26,10 @@ void dgAgregarHoja::on_pushButton_2_clicked()
 
 void dgAgregarHoja::on_pushButton_clicked()
 {
-    accept();
+    if(ui->ValorTexto->toPlainText().isEmpty()){
+        ErrorPopUp* Error = new ErrorPopUp(this);
+        Error->show();
+        return;
+    }
 }
 
