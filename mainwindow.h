@@ -2,9 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "dgagregarhoja.h"
+#include "node.h"
+#include <QPainter>
+#include <QDebug>
 
 QT_BEGIN_NAMESPACE
+
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
@@ -15,6 +18,11 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    int Nodos = 0;
+    Node* NodoInicial = nullptr;
+    void paintEvent(QPaintEvent *event) override;
+    void drawNodes(QPainter& painter, Node* node, int centerX, int centerY);
+
 
 private slots:
     void on_btn2_clicked();

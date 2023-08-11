@@ -26,6 +26,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         resource.qrc
         dgagregarhoja.h dgagregarhoja.cpp dgagregarhoja.ui
         errorpopup.h errorpopup.cpp errorpopup.ui
+        node.h node.cpp
+
+
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Prueba1 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
